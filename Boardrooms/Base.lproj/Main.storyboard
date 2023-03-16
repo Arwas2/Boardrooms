@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jDS-37-tGg">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Boardrooms" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Design" translatesAutoresizingMaskIntoConstraints="NO" id="0WM-sp-PO4">
+                                <rect key="frame" x="0.0" y="-56" width="393" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome back! Glad to see you, Again!" translatesAutoresizingMaskIntoConstraints="NO" id="R3o-YK-ZSI">
+                                <rect key="frame" x="16" y="128" width="388" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.77254903320000001" green="0.39607840779999998" blue="0.26274511220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovW-Am-otw">
+                                <rect key="frame" x="18" y="402" width="357" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.13725490870000001" green="0.1411764771" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="login">
+                                    <color key="baseBackgroundColor" red="0.13725490870000001" green="0.1411764771" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="sM7-Ym-eur"/>
+                                    <segue destination="DRW-VH-g3B" kind="show" id="prt-ep-1uy"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbK-QB-e5o">
+                                <rect key="frame" x="27" y="257" width="348" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your job number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Elp-Ym-vNr">
+                                        <rect key="frame" x="8" y="5" width="332" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjI-iP-anm">
+                                <rect key="frame" x="27" y="327" width="348" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-UZ-4vs">
+                                        <rect key="frame" x="8" y="5" width="332" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eye.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FF7-Rh-xSO">
+                                        <rect key="frame" x="288" y="17" width="45" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V9P-b0-cXV">
+                        <barButtonItem key="backBarButtonItem" title=" " id="3RB-6x-3Yp"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="button" destination="ovW-Am-otw" id="98S-qU-RjH"/>
+                        <outlet property="field" destination="Elp-Ym-vNr" id="mhP-NS-7k7"/>
+                        <outlet property="field2" destination="E1p-UZ-4vs" id="u5x-Ot-aov"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168.7022900763359" y="-256.33802816901408"/>
+        </scene>
+        <!--Board Rooms-->
+        <scene sceneID="ftd-ec-CiZ">
+            <objects>
+                <viewController id="DRW-VH-g3B" customClass="secondViewController" customModule="Boardrooms" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lM3-qt-agy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGD-zg-IML">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Board Rooms" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MfI-sZ-b2Q">
+                                        <rect key="frame" x="87" y="59" width="219" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.13725490870000001" green="0.1411764771" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490870000001" green="0.1411764771" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="G5r-IH-R0J">
+                                <rect key="frame" x="-9" y="139" width="413" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="All board rooms" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sya-gG-avm">
+                                <rect key="frame" x="41" y="150" width="228" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77254903320000001" green="0.39607840779999998" blue="0.26274511220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Available today" translatesAutoresizingMaskIntoConstraints="NO" id="Stx-jG-SgC">
+                                <rect key="frame" x="41" y="182" width="226" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77254903320000001" green="0.39607840779999998" blue="0.26274511220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Book now" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z4t-Te-kMq">
+                                <rect key="frame" x="244" y="225" width="80" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77254903320000001" green="0.39607840779999998" blue="0.26274511220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow.forward.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bdJ-gQ-zLf">
+                                <rect key="frame" x="322" y="223" width="32" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="My booking" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DsF-Wp-NAi">
+                                <rect key="frame" x="29" y="275" width="169" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.13725490870000001" green="0.1411764771" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image2" translatesAutoresizingMaskIntoConstraints="NO" id="cBz-hj-NUH">
+                                <rect key="frame" x="9" y="309" width="377" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="See All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-bY-zvc">
+                                <rect key="frame" x="314" y="279" width="48" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="16"/>
+                                <color key="textColor" red="0.77254903320000001" green="0.39607840779999998" blue="0.26274511220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="All booking for March" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cmI-tF-mRa">
+                                <rect key="frame" x="29" y="421" width="240" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.13725490870000001" green="0.1411764771" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lbO-CW-sGi"/>
+                        <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Board Rooms" id="Yko-KY-5xN">
+                        <barButtonItem key="backBarButtonItem" title="  " id="PW0-1i-7DN"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Tk-cX-cal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014.5038167938931" y="-256.33802816901408"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="I3f-Qt-cmu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jDS-37-tGg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gQ7-Jl-iYR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Hem-2c-wmF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Sd-fk-5Lp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="-256"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Design" width="454" height="460"/>
+        <image name="Image 1" width="716" height="276"/>
+        <image name="Image2" width="716" height="244"/>
+        <image name="arrow.forward.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="eye.slash" catalog="system" width="128" height="84"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
