@@ -9,17 +9,26 @@
 /* Begin PBXBuildFile section */
 		532185D829C19FBF00EC9196 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532185D729C19FBF00EC9196 /* secondViewController.swift */; };
 		532185DA29C1B47300EC9196 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532185D929C1B47300EC9196 /* NavigationController.swift */; };
+		532190E529C706D6009AEA0A /* emploey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532190E429C706D6009AEA0A /* emploey.swift */; };
+		532190E829C7106D009AEA0A /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532190E729C7106D009AEA0A /* Booking.swift */; };
+		532190EA29C8409E009AEA0A /* Roominfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532190E929C8409E009AEA0A /* Roominfo.swift */; };
+		532190EC29C8474E009AEA0A /* infoTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532190EB29C8474E009AEA0A /* infoTableViewCell2.swift */; };
 		532A0C9429BF28E8001CA88D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A0C9329BF28E8001CA88D /* AppDelegate.swift */; };
 		532A0C9629BF28E8001CA88D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A0C9529BF28E8001CA88D /* SceneDelegate.swift */; };
 		532A0C9829BF28E8001CA88D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A0C9729BF28E8001CA88D /* ViewController.swift */; };
 		532A0C9B29BF28E8001CA88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532A0C9929BF28E8001CA88D /* Main.storyboard */; };
 		532A0C9D29BF28E9001CA88D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532A0C9C29BF28E9001CA88D /* Assets.xcassets */; };
 		532A0CA029BF28E9001CA88D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532A0C9E29BF28E9001CA88D /* LaunchScreen.storyboard */; };
+		53A5B70E29C2F8E6007D8B6B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A5B70D29C2F8E6007D8B6B /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		532185D729C19FBF00EC9196 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		532185D929C1B47300EC9196 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		532190E429C706D6009AEA0A /* emploey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emploey.swift; sourceTree = "<group>"; };
+		532190E729C7106D009AEA0A /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		532190E929C8409E009AEA0A /* Roominfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roominfo.swift; sourceTree = "<group>"; };
+		532190EB29C8474E009AEA0A /* infoTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoTableViewCell2.swift; sourceTree = "<group>"; };
 		532A0C9029BF28E8001CA88D /* Boardrooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boardrooms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		532A0C9329BF28E8001CA88D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		532A0C9529BF28E8001CA88D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +37,7 @@
 		532A0C9C29BF28E9001CA88D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		532A0C9F29BF28E9001CA88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		532A0CA129BF28E9001CA88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A5B70D29C2F8E6007D8B6B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		532190E629C71060009AEA0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				532190E429C706D6009AEA0A /* emploey.swift */,
+				532190E729C7106D009AEA0A /* Booking.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		532A0C8729BF28E8001CA88D = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +82,13 @@
 				532A0C9329BF28E8001CA88D /* AppDelegate.swift */,
 				532A0C9529BF28E8001CA88D /* SceneDelegate.swift */,
 				532A0C9729BF28E8001CA88D /* ViewController.swift */,
+				532190E629C71060009AEA0A /* Model */,
 				532A0C9929BF28E8001CA88D /* Main.storyboard */,
 				532185D929C1B47300EC9196 /* NavigationController.swift */,
 				532185D729C19FBF00EC9196 /* secondViewController.swift */,
+				532190EB29C8474E009AEA0A /* infoTableViewCell2.swift */,
+				53A5B70D29C2F8E6007D8B6B /* TableViewCell.swift */,
+				532190E929C8409E009AEA0A /* Roominfo.swift */,
 				532A0C9C29BF28E9001CA88D /* Assets.xcassets */,
 				532A0C9E29BF28E9001CA88D /* LaunchScreen.storyboard */,
 				532A0CA129BF28E9001CA88D /* Info.plist */,
@@ -144,9 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				532190EC29C8474E009AEA0A /* infoTableViewCell2.swift in Sources */,
+				532190EA29C8409E009AEA0A /* Roominfo.swift in Sources */,
+				532190E529C706D6009AEA0A /* emploey.swift in Sources */,
+				532190E829C7106D009AEA0A /* Booking.swift in Sources */,
 				532185D829C19FBF00EC9196 /* secondViewController.swift in Sources */,
 				532A0C9829BF28E8001CA88D /* ViewController.swift in Sources */,
 				532185DA29C1B47300EC9196 /* NavigationController.swift in Sources */,
+				53A5B70E29C2F8E6007D8B6B /* TableViewCell.swift in Sources */,
 				532A0C9429BF28E8001CA88D /* AppDelegate.swift in Sources */,
 				532A0C9629BF28E8001CA88D /* SceneDelegate.swift in Sources */,
 			);
