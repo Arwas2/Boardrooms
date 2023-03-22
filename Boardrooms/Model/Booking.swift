@@ -10,7 +10,7 @@ import Foundation
 struct Booking: Codable {
     let id: String
     let boardroom: Boardroom
-    let date: String
+  //  let date: String
 }
 
 // MARK: - Boardroom
@@ -21,6 +21,7 @@ struct Boardroom: Codable {
     let id, description: String
     let imageURL: String
     let noOfSeats: Int
+   // let dateBooking: String
 
     enum CodingKeys: String, CodingKey {
         case name, facilities
@@ -28,6 +29,7 @@ struct Boardroom: Codable {
         case id, description
         case imageURL = "image_url"
         case noOfSeats = "no_of_seats"
+     //   case dateBooking = "date"
     }
 }
 
