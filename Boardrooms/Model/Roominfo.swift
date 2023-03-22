@@ -12,4 +12,5 @@ struct Roominfo {
  var BordRoomName : String
  var imgBoardRoom : String
  var floorNumb : String
+    
 }
